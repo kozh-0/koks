@@ -1,0 +1,49 @@
+.show {display: block;}
+.hide {display: none;}
+.showflex {display: flex !important;}
+
+.status {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.splitter {
+	margin: 60px auto 0;
+	height: 2px;
+	background: #333;
+	max-width: 300px;
+	opacity: 0.5;
+}
+
+
+.active {
+	font-weight: 500;
+	font-size: 24px;
+	color: #000 !important;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade { from {opacity: 0.1;} to {opacity: 1;}}
+
+.na_top {
+	position: fixed;
+	cursor: pointer;
+	margin-right: 60px;
+	bottom: 0px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	background: orange;
+
+    text-align: center;
+	display: block;
+	font-size: 30px;
+	transform: rotate(-90deg);
+	transition: all .3s ease;
+}
+.na_top:hover{
+	color: white;
+}
