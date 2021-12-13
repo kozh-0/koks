@@ -1,4 +1,4 @@
 # kek project
 
 Adding things as i learn through kek perception ¯\_(ツ)_/¯
-Гит для добаебов кста
+38 коммитов удалилось как начал использовать git, до этого загружал вручную
