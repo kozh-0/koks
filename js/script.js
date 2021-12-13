@@ -207,6 +207,7 @@ const getData = async (url) => {
 };
 
 getData('nax.json')
+	.then(data => console.log(data))
 	.then(data => {
 		data.menu.forEach(({img, altimg, price, descr}) => {
 			new Product(img, altimg, price, descr, '.product__list').render();

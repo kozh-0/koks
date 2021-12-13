@@ -533,9 +533,12 @@ footer h5 {
 	text-indent: 30px;
 	max-width: 600px;
 }
-.slide__text span.bucks {
+.bucks {
+	display: inline-block;
 	background: purple;
+	padding: 0 50px;
 	color: #fff;
+	text-indent: 0px;
 }
 
 
