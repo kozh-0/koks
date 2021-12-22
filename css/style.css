@@ -663,10 +663,19 @@ footer h5 {
 		right: 0;
 		top: 0;
 		padding: 34px;
-		background-color: rgba(38, 38, 38, .85);
+		background-color: rgba(38, 38, 38, .9);
 		height: 100%;
+		width: 100%;
+		text-align: center;
+		z-index: 10;
+		transition: all 1s ease;
 	}
 
+	nav a {
+		position: relative;
+		z-index: 100;
+	}
+	.menu a {margin-right: 0px;}
 	.menu li {
 		margin-top: 15px;
 		font-size: 20px;
@@ -674,12 +683,14 @@ footer h5 {
 
 
 	.hamburger{
-		z-index: 6;
 	    display: block;
 	    position: relative;
 	    cursor: pointer;
-
+		z-index: 10;
 	}
+	
+
+	
 
 	button img {
 		height: 40px;

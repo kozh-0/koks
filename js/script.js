@@ -4,6 +4,7 @@ document.querySelector('.na_top').addEventListener('click', () => {
 	document.documentElement.scrollTop = 0;
 });
 
+
 	/* TAB ==============================================================*/
 
 const tabParent = document.querySelector('.list__in'),
@@ -125,7 +126,7 @@ document.addEventListener('keydown', (e) => {
 	}
 });
 
-const modalTimer = setTimeout(openModal, 50000);
+const modalTimer = setTimeout(openModal, 70000);
 
 function showModalByScroll() {
 	if  (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
@@ -142,7 +143,6 @@ function showModalByScroll() {
 const burger = document.querySelector('.hamburger'),
 	  mobileMenu = document.querySelector('.menu');
 
-
 function burgerToggle(flow = '', margin = '') {
 	document.body.style.overflow = flow;
 	document.querySelector('.tel').classList.toggle('hide');
@@ -158,9 +158,10 @@ burger.addEventListener('click', () => {
 	}
 });
 
-document.body.addEventListener('click', (e) => {
-	if (mobileMenu.classList.contains('showflex') && !(e.target === mobileMenu)) {
-		// mobileMenu.remove()
+mobileMenu.addEventListener('click', (e) => {
+	if (mobileMenu.classList.contains('showflex') && (e.target.tagName != 'LI')) {
+		mobileMenu.classList.toggle('showflex');
+		burgerToggle();
 	}
 });
 
