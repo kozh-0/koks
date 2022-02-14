@@ -47,7 +47,7 @@ tabParent.addEventListener('click', (e) => {
 
 	/* TIMER ===========================================================*/
 
-const deadline = '2022-01-31';
+const deadline = '2022-03-31';
 	// Объект со временем
 function getTimeRemaining(endtime) { 
 	const t = Date.parse(endtime) - Date.parse(new Date()),
